@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#253f57">
+  <meta name="color-scheme" content="light">
+  <title>DFA. Does F*** All. Feels like it did.</title>
+  <meta name="description" content="21 pretend studio controls for Stream Deck. Convincing clicks. Beautifully pointless adjustments. A free Mac plugin by Austin Presley.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DFA. Does F*** All. Feels like it did.">
+  <meta property="og:description" content="Professional placebo equipment for Stream Deck. 21 controls. Absolutely no effect on your mix.">
+  <meta property="og:image" content="https://austinpresley.github.io/DFA-Streamdeck/assets/launch.png">
+  <meta property="og:url" content="https://austinpresley.github.io/DFA-Streamdeck/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://austinpresley.github.io/DFA-Streamdeck/">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css?v=278e7b2735f8">
+  <script type="module" src="app.mjs?v=9232797fe8b4"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the controls</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="DFA home"><img src="assets/icon.png" width="40" height="40" alt=""><span>DFA<span class="brand-rule"></span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#play">Play</a><a href="#controls">The controls</a><a href="#install">Install</a>
+      <a class="github-link" href="https://github.com/austinpresley/DFA-Streamdeck">GitHub <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10"/></svg></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="intro">Professional placebo equipment.</p>
+        <h1 id="hero-title">Does<br>F*** All.</h1>
+        <p class="hero-payoff">Feels like it did.</p>
+        <p class="hero-description">The fake fader is now a whole plugin.<br>21 deeply satisfying, entirely pretend studio<br class="desktop-break"> controls for your Stream Deck.</p>
+        <a class="download-button" href="https://github.com/austinpresley/DFA-Streamdeck/releases/download/v0.5.0/DFA-0.5.0.0.streamDeckPlugin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Get DFA for Mac<span class="download-version">v0.5.0</span></a>
+        <p class="download-meta">Free download. macOS 13+ and Stream Deck 6.5+.</p>
+        <a class="preview-note" href="#release-status"><span class="status-dot"></span>Public preview. Hardware checks pending.</a>
+      </div>
+
+      <div class="hero-instrument" aria-label="Interactive pretend monitor fader">
+        <div class="instrument">
+          <i class="screw top-left" aria-hidden="true"></i><i class="screw top-right" aria-hidden="true"></i><i class="screw bottom-left" aria-hidden="true"></i><i class="screw bottom-right" aria-hidden="true"></i>
+          <div class="instrument-heading"><span>Monitor</span><span class="model-mark">DFA / 001</span></div>
+          <div class="fader-assembly">
+            <div class="fader-scale" aria-hidden="true"><span>100</span><span>80</span><span>60</span><span>40</span><span>20</span><span>0</span></div>
+            <div class="fader-track"><span class="fader-groove" aria-hidden="true"></span><span class="fader-cap" id="fader-cap" aria-hidden="true"><i></i></span><input id="fader" type="range" min="0" max="100" value="50" step="5" aria-label="Pretend monitor level" aria-describedby="fader-hint"></div>
+            <div class="fader-ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="instrument-bottom"><div><span class="lamp" aria-hidden="true"></span><output id="fader-response" for="fader">Better?</output></div><output id="fader-value" for="fader">50<span>%</span></output></div>
+          <div class="instrument-brand" aria-hidden="true">DFA<span></span></div>
+        </div>
+        <p id="fader-hint" class="fader-caption"><svg viewBox="0 0 54 34" aria-hidden="true"><path d="M51 30C20 32 15 20 15 4m-8 9 8-10 9 8"/></svg>Go on. Move it.<br><span>Your mix is safe.</span></p>
+      </div>
+    </section>
+
+    <div class="spec-strip"><div class="wrap"><span>21 key controls</span><span>7 dial controls</span><span>8 original sounds</span><span>0 actual improvements</span></div></div>
+
+    <section id="play" class="play-section wrap" aria-labelledby="play-title">
+      <div class="section-intro"><div><h2 id="play-title">Important-looking.<br>Delightfully useless.</h2><p>Press a key. Enjoy the ceremony.<br>Take full credit for the result.</p></div><div class="demo-options"><button id="sound-toggle" class="option-button" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m11 5-5 4H3v6h3l5 4V5Zm5 3 5 8m0-8-5 8"/></svg><span>Sound off</span></button><button id="reset-demo" class="text-button" type="button">Reset the evidence</button></div></div>
+      <div class="rack">
+        <i class="screw top-left" aria-hidden="true"></i><i class="screw top-right" aria-hidden="true"></i><i class="screw bottom-left" aria-hidden="true"></i><i class="screw bottom-right" aria-hidden="true"></i>
+        <div class="rack-header"><span>DFA studio collection</span><span>Connected to absolutely nothing <i class="lamp small" aria-hidden="true"></i></span></div>
+        <div id="demo-keys" class="demo-keys"></div>
+        <noscript><p class="noscript-note">Enable JavaScript to play the browser demo. The Mac download works independently.</p></noscript>
+        <div class="rack-footer"><span id="demo-message" role="status" aria-live="polite">Awaiting a highly consequential decision.</span><span class="rack-signature" aria-hidden="true">DFA</span></div>
+      </div>
+      <div class="demo-footnote"><p>A browser taste, using DFA's native key artwork and bundled sounds.<br>The plugin runs natively on your Mac. This page is its own little toy.</p><label><input id="reduced-motion" type="checkbox"> Reduce motion</label></div>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-title"><div class="wrap story-layout"><p class="story-aside">An old studio trick.<br>A very committed execution.</p><div><h2 id="story-title">"Can you turn me up<br>a little?"</h2><p>The engineer moves an unconnected fader.<br>"Better?"<br>"Perfect."</p><p class="story-explanation">DFA is that fader, with more buttons. Real clicks, tiny mechanical performances and the solemn confidence of equipment doing something important. Every adjustment stays inside DFA.</p><p class="story-signoff">Everybody's happy. Nothing has changed.</p></div></div></section>
+
+    <section id="controls" class="collection-section wrap" aria-labelledby="controls-title">
+      <div class="section-intro"><div><h2 id="controls-title">A full desk of<br>questionable solutions.</h2><p>Every control works on a key.<br>Seven also work on Stream Deck + dials.</p></div><span class="collection-count">The complete<br><strong>21</strong></span></div>
+      <div class="control-list">
+        <article><img src="assets/keys/fader-idle-50-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>DFA fader <span>+ dial</span></h3><p>Your imaginary monitor mix. Better?</p></div></article>
+        <article><img src="assets/keys/fix-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Fix it</h3><p>A brief repair. A decisive "Fixed."</p></div></article>
+        <article><img src="assets/keys/calibrate-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Calibrate</h3><p>Measure, align, verify absolutely nothing.</p></div></article>
+        <article><img src="assets/keys/more-idle-50-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>More <span>+ dial</span></h3><p>More of what is never established.</p></div></article>
+        <article><img src="assets/keys/warmth-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Warmth <span>+ dial</span></h3><p>Bring an imaginary tube to "Toasty."</p></div></article>
+        <article><img src="assets/keys/less-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Less <span>+ dial</span></h3><p>Independent of More. Both can be 100.</p></div></article>
+        <article><img src="assets/keys/ab-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>A/B</h3><p>Two identical settings. Hear that?</p></div></article>
+        <article><img src="assets/keys/alignment-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Sweet spot <span>+ dial</span></h3><p>Two needles meet. There.</p></div></article>
+        <article><img src="assets/keys/finetune-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Fine tune <span>+ dial</span></h3><p>A careful journey back to the start.</p></div></article>
+        <article><img src="assets/keys/approval-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Client approval</h3><p>One very authoritative rubber stamp.</p></div></article>
+        <article><img src="assets/keys/confidence-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Confidence <span>+ dial</span></h3><p>At 100%, officially unwarranted.</p></div></article>
+        <article><img src="assets/keys/blame-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Blame</h3><p>Cable. Room. Source. Previous engineer.</p></div></article>
+        <article><img src="assets/keys/bypass-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Bypass</h3><p>Disconnect the already disconnected.</p></div></article>
+        <article><img src="assets/keys/override-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Executive override</h3><p>Open the guard. Authorize nothing.</p></div></article>
+        <article><img src="assets/keys/pop-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Make it pop</h3><p>A spring-loaded answer to that request.</p></div></article>
+        <article><img src="assets/keys/glue-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Glue</h3><p>Two blocks. One convincing clunk.</p></div></article>
+        <article><img src="assets/keys/mud-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Remove mud</h3><p>Drain a little inspection window.</p></div></article>
+        <article><img src="assets/keys/reboot-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Unnecessary reboot</h3><p>Turns its own tiny display off and on.</p></div></article>
+        <article><img src="assets/keys/busy-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Busy doing nothing</h3><p>Progress. Second thoughts. Completion.</p></div></article>
+        <article><img src="assets/keys/talent-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Talent</h3><p>Dispenses one official unit. You're welcome.</p></div></article>
+        <article><img src="assets/keys/perfection-idle-144.png" width="72" height="72" alt="" loading="lazy"><div><h3>Perfection</h3><p>Polish. Inspect. Close enough.</p></div></article>
+      </div>
+    </section>
+
+    <section class="preferences-section wrap" aria-labelledby="preferences-title"><div class="paint-swatches" aria-hidden="true"><div class="paint-key blue"><span></span></div><div class="paint-key rose"><span></span></div><div class="paint-key green"><span></span></div></div><div><h2 id="preferences-title">Your particular<br>shade of pointless.</h2><p>Choose each button's main color, accent and label. Dial in 1-point or 5-point steps on value controls. Keep the sound, turn it down, or mute it. Reduced motion keeps the ceremonies steady.</p><p>Every placed control keeps its own preferences.<br>Even the useless things deserve boundaries.</p></div></section>
+
+    <section id="install" class="install-section"><div class="wrap install-layout"><div><h2>Improve nothing.<br>Install DFA.</h2><p>A free Mac plugin by Austin Presley.</p><a class="download-button amber" href="https://github.com/austinpresley/DFA-Streamdeck/releases/download/v0.5.0/DFA-0.5.0.0.streamDeckPlugin"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Get DFA for Mac<span class="download-version">v0.5.0</span></a><p class="install-size">3.3 MB. Developer ID signed. Apple-notarized.</p><a class="release-link" href="https://github.com/austinpresley/DFA-Streamdeck/releases/tag/v0.5.0">Release notes and checksums</a></div><div class="install-instructions"><ol><li><strong>Download the plugin.</strong><span>macOS 13+ and Stream Deck 6.5+. Keys on any Stream Deck; dials on Stream Deck +.</span></li><li><strong>Double-click to install.</strong><span>Confirm the prompt in Stream Deck. Be online for the first launch's Apple ticket check.</span></li><li><strong>Drag a DFA control onto a key.</strong><span>Press. Nod thoughtfully. Say "Better?"</span></li></ol><p><a href="INSTALL.md">Full install guide and troubleshooting</a></p></div></div></section>
+
+    <section id="release-status" class="release-status wrap" aria-labelledby="status-title"><h2 id="status-title"><span class="status-dot"></span>A small, honest footnote.</h2><div><p>v0.5.0 is a public preview. The signed universal build has passed software tests, native simulations and real-executable scenario replays. Physical installation, key and dial feel, listening, and device lifecycle checks remain pending. Built for Apple silicon and Intel; the Intel slice and oldest supported macOS have not been run.</p><p>DFA changes its own pixels, bundled sounds and preferences. Your mix, system volume and other apps stay yours. No account, analytics or runtime internet connection. Apple's first-launch security check is separate.</p><p>DFA's original code and assets are proprietary. Official binaries are free to install and use. <a href="LICENSE">License</a> and <a href="THIRD_PARTY_NOTICES.md">third-party notices</a>.</p></div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="footer-wordmark" href="./">DFA</a><p>Made with unnecessary care.<br>© 2026 Austin Presley.</p><a href="https://github.com/austinpresley/DFA-Streamdeck">Find DFA on GitHub</a></footer>
+</body>
+</html>
